@@ -1,6 +1,6 @@
 import datetime
 from graph import plot_graph_and_print_stats
-from methods import calculate_bytes_sent_and_received
+from calculate_bytes_and_append_to_db import calculate_bytes_sent_and_received
 
 
 current_time = datetime.datetime.now().time().strftime("%H:%M:%S")
@@ -15,5 +15,5 @@ set_time = str(_set_time)
 print(f'Now monitoring network usage - monitoring will stop at {set_time}')
 
 if __name__ == "__main__":
-    calculate_bytes_sent_and_received(current_time,set_time)
+    calculate_bytes_sent_and_received(current_time, set_time)
     plot_graph_and_print_stats(current_time, set_time)

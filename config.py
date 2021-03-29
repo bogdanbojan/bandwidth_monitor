@@ -1,6 +1,5 @@
 import psycopg2
 
-# connecting to db
 connection = psycopg2.connect(
         database="bandwidth_monitor",
         user='postgres',

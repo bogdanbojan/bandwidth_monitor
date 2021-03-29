@@ -1,7 +1,6 @@
 import datetime
 from graph import plot_graph_and_print_stats
-from methods import calculate_bytes_sent_and_received
-
+from calculate_bytes_and_append_to_db import calculate_bytes_sent_and_received
 
 current_time = datetime.datetime.now().time().strftime("%H:%M:%S")
 
